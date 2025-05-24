@@ -5,7 +5,8 @@ const path = require('path');
 
 
 router.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../views/contact.html'));
+  //res.sendFile(path.join(__dirname, '../views/contact.html'));
+  res.render('contact')
 });
 
 router.post('/contacts', (req, res) => {

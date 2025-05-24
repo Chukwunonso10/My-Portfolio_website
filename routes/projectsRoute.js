@@ -17,7 +17,8 @@ router.get('/', (req, res) => {
       </div>`;
     });
     //res.send(html);
-    res.sendFile(path.join(__dirname, '../views/portfolio.html'));
+    //res.sendFile(path.join(__dirname, '../views/portfolio.html'));
+    res.render('portfolio');
   });
 });
 

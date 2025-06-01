@@ -59,54 +59,18 @@
                 <button data-filter="fullstack">Fullstack</button>
             </div>
             <div class="project-grid">
-                <div class="project-card" data-category="frontend">
-                    <img src="images/Event.png" alt="Project 1">
-                    <h3>Event Hub Platform</h3>
-                    <p>A platform that simplifies Event planning and management.</p>
-                    <p>Tech Stack: MongoDB, Express, React and Node js</p><br>
-                    <a href="https://github.com/EonEmmanuel/EventWave.git" class="btn">GitHub</a>
-                    <a href="https://youtu.be/dS8lQbdOoHY?si=ynYkyum_7_GZfgdS" class="btn">Live Demo</a>
+
+              <% projects.forEach((project)=>{ %>
+                <div class="project-card" data-category="<%= project.category %>">
+                    <img src="<%= project.images_url %>" alt="<%= project.title %>">
+                    <h3><%= project.title %></h3>
+                    <p><%= project.description %>.</p>
+                    <p>Tech Stack: <%= project.tech_used %></p><br>
+                    <a href="<%= project.github_link %>" class="btn">GitHub</a>
+                    <a href="<%= project.live_demo_link %>" class="btn">Live Demo</a>
                 </div>
-                <div class="project-card" data-category="backend">
-                    <img src="images/Elearning.png" alt="Project 2">
-                    <h3>E-learning Platform</h3>
-                    <p>A web-based platform designed to make learning more accessible</p>
-                    <p>Tech Stack:MongoDB, Express, React and Node js</p><br>
-                    <a href="https://github.com/EonEmmanuel/Educa" class="btn">GitHub</a>
-                    <a href="#" class="btn">Live Demo</a>
-                </div>
-                <div class="project-card" data-category="fullstack">
-                    <img src="images/Database.png" alt="Project 3">
-                    <h3>PLP Internship Database Group Project</h3>
-                    <p>A .</p>
-                    <p>Tech Stack: Draw.io, MYSQL</p><br>
-                    <a href="https://github.com/Chukwunonso10/Database_Group_assignment34/blob/master/Ecommerce.sql" class="btn">GitHub</a>
-                    <a href="#" class="btn">Live Demo</a>
-                </div>
-                <div class="project-card" data-category="frontend">
-                    <img src="images/Maternity.png" alt="Project 4">
-                    <h3>Maternity Hub</h3>
-                    <p>A responsive website built with Bootstrap.</p>
-                    <p>Tech Stack: Django, SQLite, Html and CSS</p><br>
-                    <a href="https://github.com/Chukwunonso10/Maternity" class="btn">GitHub</a>
-                    <a href="$" class="btn">Live Demo</a>
-                </div>
-                <div class="project-card" data-category="backend">
-                    <img src="images/DOCLINK.PNG" alt="Project 5">
-                    <h3>AN AI-POWERED TELE-HEALTH AND APPLICATION MANAGEMENT PLATFORM</h3>
-                    <p>At DocLink we believe that healthcare should be accessible, efficient, and patient-centered.</p>
-                    <p>Tech Stack: REACT, EXPRESS JS, MONGODB AND NODE JS</p><br>
-                    <a href="#" class="btn">GitHub</a>
-                    <a href="https://doctors-link.vercel.app/" class="btn">Live Demo</a>
-                </div>
-                <div class="project-card" data-category="fullstack">
-                    <img src="images/pORTFOLIO.png" alt="Project 6">
-                    <h3>PORTFOLIO WEBSITE PROJECT</h3>
-                    <p>A Portfolio Website.</p>
-                    <p>Tech Stack:W HTML, CSS, JAVASCRIPT, MYSQL</p><br>
-                    <a href="https://github.com/Chukwunonso10/My-Portfolio_website" class="btn">GitHub</a>
-                    <a href="#" class="btn">Live Demo</a>
-                </div>
+             <% }); %>
+
             </div>
         </section>
 
@@ -156,6 +120,7 @@
                 <a href="https://github.com/Chukwunonso10">GitHub</a>
                 <a href="mailto:kuzuechinonsojude@gmail.com">Email</a>
                 <a href="https://x.com/kuzue_chinonso">Twitter</a>
+                <a href="Tel: 07032531817">Call</a>
             </div>
         </section>
     </main>

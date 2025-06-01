@@ -8,7 +8,10 @@ CREATE TABLE IF NOT EXISTS projects (
   description TEXT NOT NULL,
   tech_used VARCHAR(255),
   github_link VARCHAR(255),
-  live_demo_link VARCHAR(255)
+  live_demo_link VARCHAR(255),
+  images_url VARCHAR(255),
+  category VARCHAR(255)
+
 );
 
 CREATE TABLE IF NOT EXISTS contacts (

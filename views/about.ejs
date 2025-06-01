@@ -1,47 +1,54 @@
-<!-- about.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="About MR JUDE">
-  <link rel="stylesheet" href="css/style.css" />
-  <title>About | MR JUDE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jude's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <h1>MR JUDE</h1>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/portfolio">Projects</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1>Mr CHUKWUNONSO</h1>
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
 
-  <main class="about">
-    <h2>About Me</h2>
-    <p>I’m a software engineer with a strong foundation in civil engineering. I transitioned into tech to build impactful software that solves everyday problems. My focus is on full-stack development, web APIs, and system architecture.</p>
-    <p>
-        My programming journey began in 1985 when personal computers were just becoming mainstream. 
-        I started with BASIC and assembly language, writing simple programs that sparked a lifelong 
-        passion for creating digital solutions.
-    </p>
-    <p>
-        Throughout the 90s and 2000s, I evolved with the industry - from desktop applications to 
-        the birth of the web, from static HTML pages to dynamic web applications. I've seen the 
-        rise of JavaScript frameworks, the mobile revolution, and the cloud computing transformation.
-    </p>
-    <p>
-        Today, I specialize in modern full-stack development, combining decades of experience with 
-        cutting-edge technologies. I believe in writing clean, maintainable code and mentoring the 
-        next generation of developers.
-    </p>
-  </main>
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="images/nony.jpeg" alt="Jude's Profile">
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h2>About Me</h2>
+                    <p>After completing my degree in Civil Engineering, I discovered my passion for software development. I transitioned into tech, where I now create innovative solutions that bridge the gap between engineering and technology.</p>
+                </div>
+            </div>
+        </section>
+
+        
+    <footer>
+        <p>&copy; copyright 2025 Chukwunonso. All rights reserved.  privacy policy</p>
+    </footer>
+
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
-
-        
-        
